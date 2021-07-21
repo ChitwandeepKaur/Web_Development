@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        #table1 td{
+            border: 1px inset black;
+            text-align: center;
+            /* border-spacing: 20px; */
+            padding: 10px;
+            border-spacing: inherit;
+        }
+        #table2{
+            border-spacing: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h4>Name - Chitwandeep Kaur Palne</h4>
+        <h4>Roll No - 1910990698</h4>
+        <h4></h4>
+    </div>
+    <table style="border: 1px solid black; background-color: lightgrey;" id="table1">
+        <tr>
+            <td>Day</td>
+            <td>1st period</td>
+            <td>2nd period</td>
+            <td>3rd period</td>
+            <td>4th period</td>
+            <td>5th period</td>
+            <td>6th period</td>
+            <td>7th period</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">Maths</td>
+            <td>Art</td>
+            <td rowspan="5" style="background-color: rgba(18, 18, 31, 0.356);">Break</td>
+            <td>Biology</td>
+            <td></td>
+            <td>Physics</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Maths</td>
+            <td>Art</td>
+            <td></td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Biology</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Music</td>
+            <td></td>
+            <td>Physics</td>
+            <td>English</td>
+            <td></td>
+            <td>Physics</td>
+        </tr>
+        
+        <tr>
+            <td>Thursday</td>
+            <td></td>
+            <td colspan="2">English</td>
+            <td></td>
+            <td>Maths</td>
+            <td>Music</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>Chemistry</td>
+            <td>P.D.</td>
+            <td></td>
+            <td colspan="2">Lab</td>
+            
+            <td>Art</td>
+        </tr>
+
+        <tr>
+            <td>Saturday</td>
+            <td colspan="7" style="background-color: rgba(18, 18, 31, 0.356);">Holiday</td>
+ 
+        </tr>
+
+        <tr>
+            <td >Sunday</td>
+            <td colspan="7" style="background-color: rgba(18, 18, 31, 0.356);">Holiday</td>
+        </tr>
+        <tr>
+            <td colspan="8" >Enjoy your weekend</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <form method="GET">
+        <h2>Biodata Form</h2>
+        <h4>(To be filled by every student)</h4>
+        <br>
+        <table id="table2">
+            <tr>
+                <td><label for="firstname">First Name:</label></td>
+                <td><input type="text" id="firstname" name="firstname" placeholder="Enter your First Name here"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name:</label></td>
+                <td><input type="text" id="lastname" name="lastname" placeholder="Enter your Last Name here"></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Mobile No:</label></td>
+                <td><input type="number" id="phone" name="phone" maxlength="10" placeholder="Enter your Mobile Number here"> </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Id:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Email id"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" name="gender" value="male" id="gender">Male
+                    <input type="radio" name="gender" value="female" id="gender">Female
+                    <input type="radio" name="gender" value="others" id="gender">Others</td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Enter Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="stream">Name of Education board till 10th grade</label>
+                </td>
+                <td>
+                    <select name="stream">
+                        <option>ICSE</option>
+                        <option selected>CBSE</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="qual">Qualifications:</label></td>
+                <td><textarea rows="5" cols="30" id="qual" name="qual"> </textarea></td>
+            </tr>
+            <tr>
+                <td><label for="pic">Upload your latest passport size photograph:</label></td>
+                <td><input type="file" accept="image/*" id="pic" name="dp"></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <input type="checkbox">I confirm that the details provided are true as to my knowledge.</td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
