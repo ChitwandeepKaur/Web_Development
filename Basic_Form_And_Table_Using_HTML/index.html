@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 1</title>
+</head>
+<body>
+    <h2>Timetable</h2>
+    <br>
+    <table border="1" cellspacing="5" cellpadding="5" bgcolor="lightblue">
+        <caption>Timetable</caption>
+        <thead>
+            <tr>
+                <th> Day</th>
+                <th> 1st Period </th>
+                <th> 2nd Period </th>
+                <th>Break</th>
+                <th> 3rd Period </th>
+                <th> 4th Period </th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td rowspan="3">Break</td>
+                <td>English</td>
+                <td>Games</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Punjabi</td>
+                <td>Hindi</td>
+                <!-- <td>Break</td> -->
+                <td>Maths</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Social Studies</td>
+                <td>Physics</td>
+                <!-- <td>Break</td> -->
+                <td>Games</td>
+                <td>Science</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="6">This is the timetable of grade 5</td></tr>
+        </tfoot>
+    </table>
+    <br><br><br><hr>
+    <br>
+    <br>
+    <br>
+    <h2>BioData form</h2>
+    <fieldset>
+        <form method="get">
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="firstname">First Name:</label></td>
+                    <td><input type="text" placeholder="Enter your first name here" id="firstname">
+                        </td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name:</label></td>
+                    <td><input type="text" placeholder="Enter your last name here" id="lastname">
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                       <label for="mobilenumber">Mobile Number:</label> 
+                    </td>
+                    <td><input type="number" placeholder="Enter your mobile number here" id="mobilenumber">
+                        </td>
+                </tr>
+                <tr>
+                    <td><label for="emailid">Email ID: </label></td>
+                    <td><input type="email" placeholder="Enter your email address here" id="emailid"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="gender" name="gender2">Male
+                        <input type="radio" name="gender2" id="gender">Female
+                        <input type="radio" name="gender2" id="gender">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dateofbirth">Date of Birth:</label></td>
+                    <td><input type="date" id="dateofbirth"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="favcolor">Pick your favorite color:</label>
+                    </td>
+                    <td><input type="color" id="favcolor"></td>
+                </tr>
+                <tr>
+                    <td><label for="educationboard">Name of Education board till 10th grade</label></td>
+                    <td><select id="educationboard">
+                        <option>CBSE</option>
+                        <option>ICSE</option>
+                        <option selected>Select a board</option>
+                        <option>Other</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="qual">Qualifications:</label></td>
+                    <td><textarea cols="10" rows="5" id="qual"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Upload your latest photograph:</label></td>
+                    <td><input type="file" id="photo"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox"> I confirm that all the details provided above are true to the best of my knowledge.
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
