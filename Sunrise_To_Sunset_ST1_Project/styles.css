@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+section{
+    width:100%;
+    height: 100%;
+}
+#sky{
+    background-color: #94B3FD;
+    width: 100%;
+    height: 25vh;
+    z-index: 1;
+    animation: changes 7s linear 100ms infinite;
+}
+#earth{
+    background-color: #064635;
+    width: 100%;
+    height: 75vh;
+    z-index: 3;
+    animation: lighting 7s ease-in-out 100ms infinite;
+}
+#sun{
+    z-index: 2;
+    border-radius: 100%;
+    width: 150px;
+    position: absolute;
+    left: -100px;
+    top:100px;
+    height: 150px;
+    background-color: #FF8243;
+    animation: rising 7s ease-in-out 100ms infinite;
+}
+@keyframes rising {
+    50%{
+        left: 45.5%;
+        background-color: #FFCE45;
+        top: 0.5%;
+    }
+    100%{
+        left: 87.5%;
+        top: 100px;
+        background-color: #E26A2C;
+    }
+}
+@keyframes changes {
+    15%{
+        background-color: #C996CC;
+    }
+    50%{
+        background-color: #84DFFF;
+    }
+    80%{
+        background-color: #22577A;
+    }
+    100%{
+        background-color: black;
+    }
+}
+@keyframes lighting {
+    15%{
+        background-color: #4AA96C;
+    }
+    50%{
+        background-color: #519259;
+    }
+    80%{
+        background-color: #4AA96C;
+    }
+    100%{
+        background-color: #064635;
+    }
+}
