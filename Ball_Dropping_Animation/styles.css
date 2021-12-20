@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+div{
+    width: 100px;
+    height: 100px;
+    /* animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate; */
+    animation: bounce 1s ease-in infinite alternate;
+
+    margin: 30px auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(490px);
+    }
+}
+@keyframes rotate {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
