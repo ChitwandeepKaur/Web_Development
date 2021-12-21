@@ -1,0 +1,33 @@
+body{
+    background-color: #1F1D36;
+}
+div{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: #1F1D36;
+    font-family: 'Shizuru', cursive;
+    font-size: 2.5rem;
+    color: #B980F0;
+    padding: 20px;
+    border-top: 7px outset #C996CC;
+    border-bottom: 7px outset #C996CC;
+    border-left: 7px outset #916BBF;
+    border-right: 7px outset #916BBF;
+    transition: 1s;
+    cursor: pointer;
+}
+button:hover{
+    color: #F2FFE9;
+    box-shadow: 0px 0px 15px 5px rgb(246, 246, 246);
+    padding: 20px;
+    border-top: 7px outset #A6CF98;
+    border-bottom: 7px outset #A6CF98;
+    border-left: 7px outset #557C55;
+    border-right: 7px outset #557C55;
+    transform: translateY(-75px);
+}
